@@ -183,8 +183,8 @@ resource "aws_security_group" "SG-private-1B" {
 }
 resource "aws_key_pair" "personal_key" {
   key_name   = "aws_key"
-  public_key = "SSH-PUBLIC-KEY-HERE"
+  public_key = "SSH_PUB_KEY_HERE"
     tags = {
-        "Name" = "Personal key"
+        "Name" = "SSH-Key"
     }
 }
